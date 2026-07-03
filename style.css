@@ -1,0 +1,102 @@
+body {
+    font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, sans-serif;
+    max-width: 900px;
+    margin: 40px auto;
+    padding: 0 20px;
+    background-image: url("bg1.gif");
+    background-repeat: repeat-y repeat-x;
+    color: #ddd;
+}
+.container {
+    background: rgba(0,0,0,0.5);
+    padding: 25px;
+    border-radius: 8px;
+    box-shadow: 0 4px 6px rgba(0,0,0,0.1);
+}
+textarea {
+    width: 100%;
+    height: 180px;
+    padding: 10px;
+    border: 1px solid #ccc;
+    border-radius: 4px;
+    box-sizing: border-box;
+    font-family: monospace;
+    margin-bottom: 15px;
+    background-color: rgba(0,0,0,0.5);
+    color: white;
+}
+button {
+    background-color: #3498db;
+    color: white;
+    border: none;
+    padding: 10px 20px;
+    font-size: 16px;
+    border-radius: 4px;
+    cursor: pointer;
+}
+#loading {
+    margin: 15px 0;
+    font-weight: bold;
+    color: #7f8c8d;
+}
+.set-row {
+    background: rgba(0,0,0,0.5);
+    padding: 15px;
+    margin-top: 20px;
+    border: 1px solid #bbb;
+}
+.set-title-container {
+    display: flex;
+    align-items: center;
+    gap: 10px;
+}
+.set-icon {
+    width: 24px;
+    height: 24px;
+    object-fit: contain;
+    /* Inverts dark SVGs to display beautifully on a dark UI */
+    filter: invert(1) brightness(2);
+}
+.card-list {
+    list-style: none;
+    padding: 0;
+}
+.card-item {
+    padding: 6px 0;
+    border-bottom: 1px solid #eee;
+    display: flex;
+    align-items: center;
+    gap: 10px;
+    position: relative;
+}
+.count {
+    font-weight: bold;
+    color: #2c3e50;
+    min-width: 20px;
+    background: #eee;
+    padding: 2px 6px;
+    border-radius: 4px;
+    text-align: center;
+}
+.card-link {
+    color: #3498db;
+    text-decoration: none;
+    cursor: pointer;
+}
+.card-link:hover {
+    text-decoration: underline;
+}
+.image-preview {
+    display: none;
+    position: absolute;
+    left: 250px;
+    top: -50px;
+    z-index: 100;
+    width: 150px;
+    border-radius: 8px;
+    box-shadow: 0 4px 10px rgba(0,0,0,0.3);
+    pointer-events: none;
+}
+.card-item:hover .image-preview {
+    display: block;
+}
